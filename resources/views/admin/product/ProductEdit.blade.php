@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>产品类型修改</title>
+    <title>产品修改</title>
     <link rel="stylesheet" href="/css/app.css">
     <script src="{{asset('/js/jquery-3.2.1.js')}}"></script>
     <script src="{{asset('/js/jQuery-form.js')}}"></script>
