@@ -1,0 +1,19 @@
+<?php
+Route::group(['prefix'=>'admin'],function (){
+    //产品类型
+    Route::get("/","AdminController@index");
+    Route::get("typeadd","ProductTypeController@create");
+    Route::post("typeadd","ProductTypeController@store");
+    Route::get("typelist","ProductTypeController@show");
+    Route::get("typedel/{productType}","ProductTypeController@destroy");
+    Route::get("typeedit/{productType}","ProductTypeController@edit");
+    Route::post("typeupdate","ProductTypeController@update");
+    //产品
+    Route::get("padd","ProductController@create");
+    Route::post("padd","ProductController@store");
+    Route::get("plist","ProductController@show");
+    Route::get("pdel/{product}","ProductController@destroy");
+    Route::get("pedit/{product}","ProductController@edit");
+    Route::post("pupdate","ProductController@update");
+    Route::post("batchupdate","ProductController@batchUpdate");
+});
